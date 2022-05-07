@@ -1,0 +1,25 @@
+.card-container {
+    width: toRem(540);
+    height: toRem(364);
+    margin: toRem(223) auto;
+
+    .card-app {
+        width: toRem(540);
+        height: toRem(332);
+        background-color: #313A48;
+        box-shadow: toRem(30) toRem(50) toRem(80) rgba(0, 0, 0, 0.100202);
+        border-radius: toRem(15);
+        text-align: center;
+        padding-top: toRem(45);
+
+        h1 {
+            color: $neon-green;
+            font-weight: 800;
+            font-size: toRem(13);
+            line-height: toRem(18);
+            letter-spacing: toRem(4.08571);
+        }
+
+        p {}
+    }
+}
