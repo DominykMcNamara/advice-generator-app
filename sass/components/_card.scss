@@ -1,16 +1,19 @@
 .card-container {
-    width: toRem(540);
-    height: toRem(364);
+    max-width: toRem(540);
     margin: toRem(223) auto;
 
+
+
     .card-app {
-        width: toRem(540);
-        height: toRem(332);
+        max-width: toRem(540);
+        height: auto;
         background-color: #313A48;
         box-shadow: toRem(30) toRem(50) toRem(80) rgba(0, 0, 0, 0.100202);
         border-radius: toRem(15);
         text-align: center;
         padding-top: toRem(45);
+        padding-left: toRem(45);
+        padding-right: toRem(45);
 
         h1 {
             color: $neon-green;
@@ -20,6 +23,67 @@
             letter-spacing: toRem(4.08571);
         }
 
-        p {}
+        picture {
+            display: flex;
+            justify-content: center;
+        }
+
+        .divider {
+
+            margin-top: toRem(40);
+        }
+
+        .card-quote {
+            max-width: toRem(498);
+            margin-top: toRem(24);
+
+            p {
+                font-size: toRem(28);
+                font-weight: 800;
+                line-height: toRem(38);
+                color: $light-cyan;
+                letter-spacing: toRem(-0.3);
+            }
+
+
+        }
+
+        .card-button {
+            justify-content: center;
+            transform: translateY(toRem(25));
+            width: toRem(64);
+            height: toRem(64);
+            margin: 0 auto;
+            margin-top: toRem(72);
+            background-color: $neon-green;
+            border-radius: 100%;
+
+
+            img {
+                width: toRem(24);
+                height: toRem(24);
+                margin: toRem(20) auto;
+            }
+        }
+
     }
+}
+
+
+
+
+@media only screen and (max-width: 375px) {
+    .card-container {
+        max-width: toRem(343);
+        margin: toRem(120) auto;
+
+        .card-app {
+            max-width: toRem(343);
+        }
+    }
+}
+
+.card-button:hover {
+    box-shadow: 0 0 toRem(40) $neon-green;
+    cursor: pointer;
 }

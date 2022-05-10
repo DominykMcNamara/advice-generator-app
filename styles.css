@@ -64,18 +64,19 @@ table {
 }
 
 .card-container {
-  width: 33.75rem;
-  height: 22.75rem;
+  max-width: 33.75rem;
   margin: 13.9375rem auto;
 }
 .card-container .card-app {
-  width: 33.75rem;
-  height: 20.75rem;
+  max-width: 33.75rem;
+  height: auto;
   background-color: #313A48;
   box-shadow: 1.875rem 3.125rem 5rem rgba(0, 0, 0, 0.100202);
   border-radius: 0.9375rem;
   text-align: center;
   padding-top: 2.8125rem;
+  padding-left: 2.8125rem;
+  padding-right: 2.8125rem;
 }
 .card-container .card-app h1 {
   color: #52ffa8;
@@ -83,6 +84,53 @@ table {
   font-size: 0.8125rem;
   line-height: 1.125rem;
   letter-spacing: 0.255356875rem;
+}
+.card-container .card-app picture {
+  display: flex;
+  justify-content: center;
+}
+.card-container .card-app .divider {
+  margin-top: 2.5rem;
+}
+.card-container .card-app .card-quote {
+  max-width: 31.125rem;
+  margin-top: 1.5rem;
+}
+.card-container .card-app .card-quote p {
+  font-size: 1.75rem;
+  font-weight: 800;
+  line-height: 2.375rem;
+  color: #cee3e9;
+  letter-spacing: -0.01875rem;
+}
+.card-container .card-app .card-button {
+  justify-content: center;
+  transform: translateY(1.5625rem);
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto;
+  margin-top: 4.5rem;
+  background-color: #52ffa8;
+  border-radius: 100%;
+}
+.card-container .card-app .card-button img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 1.25rem auto;
+}
+
+@media only screen and (max-width: 375px) {
+  .card-container {
+    max-width: 21.4375rem;
+    margin: 7.5rem auto;
+  }
+  .card-container .card-app {
+    max-width: 21.4375rem;
+  }
+}
+.card-button:hover {
+  box-shadow: 0 0 2.5rem #52ffa8;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=styles.css.map */
